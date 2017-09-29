@@ -48,7 +48,6 @@ public class Note {
 				halfSteps -= 1;
 				break;
 		}
-		System.out.println("Half steps to A4: "+ (halfSteps - A4Halfsteps));
 		return Math.pow(2, (halfSteps - A4Halfsteps)/12.0) * 440; //C4 -> 261.63
 	}
 	public String toString() {
