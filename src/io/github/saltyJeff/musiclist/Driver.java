@@ -1,14 +1,14 @@
 package io.github.saltyJeff.musiclist;
 import java.util.Scanner;
 
-import io.github.saltyJeff.musiclist.songs.HotCrossBuns;
+import io.github.saltyJeff.musiclist.songs.*;
 
 public class Driver {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Welcome to a music editor with linklists");
 		System.out.println("Enter your commands:");
-		Sequence seq = HotCrossBuns.getSong();
+		Sequence seq = ClaireDeLune.getSong();
 		while(true) {
 			Scanner cmdParser = new Scanner(input.nextLine());
 			String cmd = cmdParser.next();
